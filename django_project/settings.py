@@ -33,6 +33,8 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD') or config('EMAIL_HOS
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+
+SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
@@ -44,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'taggit',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
